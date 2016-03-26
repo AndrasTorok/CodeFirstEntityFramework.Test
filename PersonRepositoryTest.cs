@@ -19,6 +19,14 @@ namespace CodeFirstEntityFramework.Test
         }
 
         [TestMethod]
+        public void GetById_OK()
+        {
+            Person person = repo.GetById(1);
+
+            Assert.IsNotNull(person);
+        }
+
+        [TestMethod]
         public void Update_OK()
         {
             bool status = repo.Update(new Person { PersonId = 1, FirstName = "Peter2", LastName = "Gabriel" });
