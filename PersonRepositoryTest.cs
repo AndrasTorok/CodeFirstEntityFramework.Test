@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Configuration;
 using CodeFirstEntityFramework.Repository;
 using CodeFirstEntityFramework.Model;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CodeFirstEntityFramework.Test
 {    
@@ -10,7 +12,7 @@ namespace CodeFirstEntityFramework.Test
     public class PersonRepositoryTest
     {
         private ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["CodeFirstEntityFramework"];
-        PersonRepository repo;
+        private PersonRepository repo;
 
         [TestInitialize]
         public void Initialize()
@@ -45,7 +47,9 @@ namespace CodeFirstEntityFramework.Test
         [TestMethod]
         public void Delete_OK()
         {
-            bool status = repo.Delete(new object[] { 2 });
+            List<Person> people = repo.GetAll().ToList();
+            Person lastPerson = people.Last();
+            bool status = repo.Delete(new object[] {lastPerson.PersonId });
 
             Assert.IsTrue(status);
         }

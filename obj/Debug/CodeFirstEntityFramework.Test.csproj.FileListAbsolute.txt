@@ -1,12 +1,14 @@
+C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\obj\Debug\CodeFirstEntityFramework.Test.csprojResolveAssemblyReference.cache
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\CodeFirstEntityFramework.Test.dll.config
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\CodeFirstEntityFramework.Test.dll
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\CodeFirstEntityFramework.Test.pdb
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\CodeFirstEntityFramework.exe
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\EntityFramework.dll
+C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\CodeFirstEntityFramework.pdb
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\EntityFramework.xml
-C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\obj\Debug\CodeFirstEntityFramework.Test.csprojResolveAssemblyReference.cache
+C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\obj\Debug\CodeFirstEntityFramework.Test.dll
 C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\obj\Debug\CodeFirstEntityFramework.Test.pdb
-C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Andras\Documents\Visual Studio 2013\Projects\Learning\CodeFirstEntityFramework.Test\bin\Debug\Newtonsoft.Json.xml
