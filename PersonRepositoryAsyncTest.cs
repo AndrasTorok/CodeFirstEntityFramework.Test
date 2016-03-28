@@ -5,51 +5,52 @@ using CodeFirstEntityFramework.Repository;
 using CodeFirstEntityFramework.Model;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CodeFirstEntityFramework.Test
 {    
     [TestClass]
-    public class PersonRepositoryTest
+    public class PersonRepositoryAsyncTest
     {
         private readonly ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["CodeFirstEntityFramework"];
-        private PersonRepository repo;
+        private PersonRepositoryAsync repo;
 
         [TestInitialize]
         public void Initialize()
         {
-            repo = new PersonRepository(css);
+            repo = new PersonRepositoryAsync(css);
         }
 
         [TestMethod]
-        public void GetById_OK()
+        public async Task GetById_OK()
         {
-            Person person = repo.GetById(1);
+            Person person = await repo.GetById(1);            
 
             Assert.IsNotNull(person);
         }
 
         [TestMethod]
-        public void Update_OK()
+        public async Task Update_OK()
         {
-            bool status = repo.Update(new Person { PersonId = 1, FirstName = "Peter2", LastName = "Gabriel" });
+            bool status = await repo.Update(new Person { PersonId = 1, FirstName = "Peter2", LastName = "Gabriel" });
 
             Assert.IsTrue(status);
         }
 
         [TestMethod]
-        public void Insert_OK()
+        public async Task Insert_OK()
         {
-            bool status = repo.Save(new Person { FirstName = "Peter", LastName = "Gabriel" });
+            bool status = await repo.Save(new Person { FirstName = "Peter", LastName = "Gabriel" });
 
             Assert.IsTrue(status);
         }
 
         [TestMethod]
-        public void Delete_OK()
+        public async Task Delete_OK()
         {
             List<Person> people = repo.GetAll().ToList();
             Person lastPerson = people.Last();
-            bool status = repo.Delete(new object[] {lastPerson.PersonId });
+            bool status = await repo.Delete(new object[] {lastPerson.PersonId });
 
             Assert.IsTrue(status);
         }
