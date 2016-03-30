@@ -22,6 +22,15 @@ namespace CodeFirstEntityFramework.Test
         }
 
         [TestMethod]
+        public async Task GetAll_OK()
+        {
+            List<Person> persons = await repo.GetAll();
+
+            Assert.IsNotNull(persons);
+            Assert.IsTrue(persons.Count > 0);
+        }
+
+        [TestMethod]
         public async Task GetById_OK()
         {
             Person person = await repo.GetById(1);            
@@ -48,7 +57,7 @@ namespace CodeFirstEntityFramework.Test
         [TestMethod]
         public async Task Delete_OK()
         {
-            List<Person> people = repo.GetAll().ToList();
+            List<Person> people = await repo.GetAll();
             Person lastPerson = people.Last();
             bool status = await repo.Delete(new object[] {lastPerson.PersonId });
 
