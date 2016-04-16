@@ -53,5 +53,20 @@ namespace CodeFirstEntityFramework.Test
 
             Assert.IsTrue(status);
         }
+
+        [TestMethod]
+        public void Overwrite_OK()
+        {
+            List<Person> people = repo.GetAll().ToList();
+
+            people.Remove(people.Last());
+            people.First().FirstName += "+";
+            people.Last().FirstName += "+";
+            people.Add(new Person { FirstName = "Andrea", LastName = "Bocelli" });
+
+            bool status = repo.Overwrite(people);
+
+            Assert.IsTrue(status);
+        }
     }
 }
